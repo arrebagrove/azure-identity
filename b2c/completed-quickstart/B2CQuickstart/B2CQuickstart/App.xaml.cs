@@ -16,6 +16,7 @@ namespace B2CQuickstart
         public static string ClientId = "8ca648fd-2dc3-4ff1-aa4c-e9bd5543f2d0";
         public static string SignUpSignInPolicy = "B2C_1_SignInSignUp";
         public static string[] Scopes = { ClientId };
+        public static string Authority = "https://login.microsoftonline.com/momentsapp.onmicrosoft.com/";
 
         public App()
         {
