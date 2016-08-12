@@ -23,5 +23,16 @@ namespace B2CQuickstart
 
             BindingContext = this;
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            
+            await App.AuthenticationClient.AcquireTokenSilentAsync(App.Scopes,
+             string.Empty,
+             App.Authority,
+             App.SignUpSignInPolicy,
+             false);
+        }
     }
 }

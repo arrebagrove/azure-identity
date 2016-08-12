@@ -25,7 +25,7 @@ namespace B2CQuickstart
                     UiOptions.SelectAccount,
                     string.Empty,
                     null,
-                    string.Empty,
+                    App.Authority,
                     App.SignUpSignInPolicy);
                 await Navigation.PushAsync(new AuthenticationSuccessfulPage(authenticationResult));
             }
