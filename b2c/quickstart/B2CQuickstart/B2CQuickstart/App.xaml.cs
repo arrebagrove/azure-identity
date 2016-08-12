@@ -15,6 +15,7 @@ namespace B2CQuickstart
         // Step #1: Add Azure AD B2C tenant information.
         public static string ClientId = "{APP-CLIENT-ID-HERE}";
         public static string SignUpSignInPolicy = "{POLICY-NAME-HERE}";
+        public static string Authority = "https://login.microsoftonline.com/{YOUR-B2C-TENANT-NAME}.onmicrosoft.com/";
         public static string[] Scopes = { ClientId };
 
         public App()
